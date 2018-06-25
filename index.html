@@ -11,9 +11,47 @@
 </head>
 
 <body>
-    
+    <form>
+        <fieldset>
+            <legend>Caracteristique du portail</legend>
+            <div class="flex flex--row">
+                <span class="flex__item--top form_title">Référence :</span>
+                <input class="flex__item--top form_input" type="text" name="ref" value="">
+            </div>
+            <div class="flex flex--row">
+                <span class="flex__item--top form_title">Description :</span>
+                <input class="flex__item--top form_input" type="text" name="desc" value="">
+            </div>
+            <fieldset class="fieldset2">
+                <legend>Nombre de ventaux</legend>
+                <div class="flex flex--row">
+                    <div class="flex__item">
+                        <input type="radio" name="vent" value="1">
+                        <span>Un ventail gauche</span>
+                    </div>
+                    <div class="flex__item">
+                        <input type="radio" name="vent" value="2">
+                        <span>Deux ventaux</span>
+                    </div>
+                    <div class="flex__item">
+                        <input type="radio" name="vent" value="3">
+                        <span>Un ventail droit</span>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="flex flex--row">
+                <span class="flex__item--top form_title">Nombre de traverse : </span>
+                <select class="flex__item form_input">
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
 
-    <script src="./script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
